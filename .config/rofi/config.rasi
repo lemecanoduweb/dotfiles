@@ -1,0 +1,10 @@
+configuration {
+	width: 50;
+	font: "Fixed 12";
+	show-icons: true;
+	hide-scrollbar: false;
+	theme: "default";
+	icon-theme: "ePapirus";
+	fake-transparency: true;
+	display-run: false;
+}
