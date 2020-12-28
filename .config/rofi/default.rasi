@@ -1,11 +1,11 @@
 * {
-    backgroundcolor: rgba(64, 64, 64, 0.5);
-    bg1: #506070;
-    separatorcolor: #506070;
-    scrollbarcolor: #506070;
-    foregroundcolor: #ffffff;
-    foregroundcolorinverse: #ffffff;
-    selectioncolor: #506070;
+    backgroundcolor: #2D363A;
+    bg1: #586E75;
+    separatorcolor: #2D363A;
+    scrollbarcolor: #586E75;
+    foregroundcolor: #94A3A5;
+    foregroundcolorinverse: #94A3A5;
+    selectioncolor: #073642;
 
 
     font-size: 1px;

@@ -5,6 +5,5 @@ configuration {
 	hide-scrollbar: false;
 	theme: "default";
 	icon-theme: "ePapirus";
-	fake-transparency: true;
 	display-run: false;
 }
