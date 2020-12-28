@@ -12,6 +12,9 @@ App :
  - `termite`
  - `feh`
  - `pulseaudio`
+ - `volumeicon`
+ - `powerkit`
+ - `nm-applet`
 
 Font :
  - `Material Design Icon`
