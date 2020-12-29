@@ -15,10 +15,17 @@ App :
  - `volumeicon`
  - `powerkit`
  - `nm-applet`
+ - `papirus-icon-theme-git`
 
 Font :
  - `Material Design Icon`
+ - `ttf-liberation`
 
+Theme
+-----
+
+Icon = `papirus-icon-theme-git`
+GTK2/3 = `gnome-themes-extra`
 
 TODO
 ----
@@ -40,3 +47,4 @@ Util links
 - https://wiki.archlinux.org/index.php/NetworkManage
 - https://github.com/firecat53/networkmanager-dmenu
 - https://github.com/polybar/polybar
+- https://github.com/davatorium/rofi
