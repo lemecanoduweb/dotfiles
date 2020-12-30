@@ -16,6 +16,7 @@ App :
  - `powerkit`
  - `nm-applet`
  - `papirus-icon-theme-git`
+ - `pavucontrol`
 
 Font :
  - `Material Design Icon`
@@ -34,7 +35,11 @@ TODO
 - Copy/Paste between term with vim
 - gtk config (and choise theme)
 
+Troubleshooting
+---------------
 
+ - active mic with pavucontrol
+ 
 Util links
 ----------
 - https://github.com/polybar/polybar/wiki
