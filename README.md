@@ -39,6 +39,7 @@ Troubleshooting
 ---------------
 
  - active mic with pavucontrol
+ - activate clipboard between vim => install `gvim`
  
 Util links
 ----------
