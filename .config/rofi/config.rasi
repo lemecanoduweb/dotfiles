@@ -1,9 +1,6 @@
 configuration {
-	width: 50;
-	font: "Fixed 12";
+	font: "Monospace 12";
 	show-icons: true;
-	hide-scrollbar: false;
-	theme: "default";
 	icon-theme: "ePapirus";
-	display-run: false;
 }
+@theme "theme"
