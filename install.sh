@@ -1,34 +1,39 @@
 #!/usr/bin/env bash
 
-install=yay --editmenu --nodiffmenu --removemake --needed --noconfirm -Sy
+set nounset -o
+set errexit -o
+
+install () {
+	yay --editmenu --nodiffmenu --removemake --needed --noconfirm -Sy ${@}
+}
 
 # Install server x
-exec install xorg-{server,xinit,apps} \
+install xorg-{server,xinit,apps} \
 	numlockx
 
 # Install i3
-exec install i3-gaps \
+install i3-gaps \
 	i3blocks \
 	i3lock
 
 # Install lightdm
-exec install lightdm \
+install lightdm \
 	lightdm-gtk-greeter \
 	lightdm-gtk-greeter-settings
 
 # Install fonts
-exec install noto-fonts \
+install noto-fonts \
 	ttf-ubuntu-font-family \
 	ttf-font-awesome \
 	ttf-liberation \
 	ttf-material-design-icons-git
 
 # Install gtk themes
-exec install papirus-icon-theme-git \
+install papirus-icon-theme-git \
 	gnome-themes-extra
 
 # Install apps
-exec isntall polybar \
+install polybar \
 	rofi \
 	picom \
 	termite \
@@ -40,12 +45,19 @@ exec isntall polybar \
 	network-manager-applet
 
 # Install oh my zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && exit
 
 # Install plug vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+# Config keymap
+sudo localectl set-x11-keymap fr
+
+# enable lightdm
+sudo systemctl enable lightdm
+
 # Copy config files
+mkdir ~/.config
 cp -r .config/* ~/.config
 cp .gtkrc-2.0 .vimrc .Xresources .zshrc ~/
