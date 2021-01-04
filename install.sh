@@ -44,6 +44,13 @@ install polybar \
 	pavucontrol \
 	network-manager-applet
 
+# Install powerkit
+install xscreensaver \
+	xorg-xrandr \
+	qt5-base \
+	qt5-svg \
+	powerkit
+
 # Install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && exit
 
