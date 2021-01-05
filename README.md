@@ -17,6 +17,10 @@ App :
  - `nm-applet`
  - `papirus-icon-theme-git`
  - `pavucontrol`
+ - `xscreensaver`
+ - `xorg-xrandr`
+ - `qt5-base`
+ - `qt5-svg`
 
 Font :
  - `Material Design Icon`
@@ -25,7 +29,7 @@ Font :
 Theme
 -----
 
-Icon = `papirus-icon-theme-git`
+Icon = `papirus-icon-theme-git` \
 GTK2/3 = `gnome-themes-extra`
 
 TODO
@@ -40,6 +44,7 @@ Troubleshooting
 
  - active mic with pavucontrol
  - activate clipboard between vim => install `gvim`
+ - install `qt5-base` and `qt5-svg` to display powerkit icons
  
 Util links
 ----------
