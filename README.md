@@ -19,6 +19,8 @@ App :
  - `pavucontrol`
  - `xscreensaver`
  - `xorg-xrandr`
+ - `qt5-base`
+ - `qt5-svg`
 
 Font :
  - `Material Design Icon`
