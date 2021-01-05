@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-set nouunset -o
-set errexit -o
+set -o nounset
+set -o errexit
 
 echo ${1} > /etc/hostname
 echo "127.0.1.1 ${1}.local ${1}" >> /etc/hosts
@@ -20,3 +20,5 @@ echo KEYMAP=fr > /etc/vconsole.conf
 mkinitcpio -p linux
 
 useradd -m -g wheel -s /usr/bin/zsh jtutzo
+
+exit 0

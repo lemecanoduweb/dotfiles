@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-set nounset -o
-set errexit -o
+set -o nounset
+set -o errexit
 
 install () {
 	yay --editmenu --nodiffmenu --removemake --needed --noconfirm -Sy ${@}
@@ -68,3 +68,5 @@ sudo systemctl enable lightdm
 mkdir ~/.config
 cp -r .config/* ~/.config
 cp .gtkrc-2.0 .vimrc .Xresources .zshrc ~/
+
+exit 0
