@@ -7,7 +7,7 @@ Install
 -------
 
 Run `install.sh`
-> Script is make for `archlinux` os
+> Script is made for `archlinux` os
 
 Info
 ----
@@ -55,7 +55,7 @@ Dependances
 Troubleshooting
 ---------------
 
-***My mic doesn't work*** /
+***My mic doesn't work*** \
 Use `pavucontrol` to activate it
 
 ***I can't copy/paste in vim when it is open in another terminal*** \
