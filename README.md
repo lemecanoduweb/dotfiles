@@ -64,7 +64,7 @@ Install `gvim` instaed of `vim`
 ***Powerkit display default Adwaita icon*** \
 Install `qt5-base` and `qt5-svg` for dispaly icon of default gtk icon
  
-Util links
+Useful links
 ----------
 - https://github.com/polybar/polybar/wiki
 - https://github.com/jaagr/dots/tree/master/.local/etc/themer/themes
