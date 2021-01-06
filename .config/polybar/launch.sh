@@ -1,12 +1,14 @@
 #!/usr/bin/env sh
 
-killall -q polybar
+DIR="$HOME/.config/polybar/"
 
-while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+kill_bar() {
+	# Terminate already running bar instances
+	killall -q polybar
 
-export MONITOR1=$(xrandr -q | grep " connected" | cut -d ' ' -f1 | head -n 1)
-export MONITOR2=$(xrandr -q | grep " connected" | cut -d ' ' -f1 | sed -n 2p)
+	# Wait until the processes have been shut down
+	while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+}
 
-polybar default
-
-echo "Bars launched..."
+kill_bar
+polybar -q main -c $DIR/main.ini &

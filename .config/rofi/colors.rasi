@@ -1,0 +1,37 @@
+* {
+    background: #2D363A;
+    foreground: #94A3A5;
+
+// Black
+    color0: #073642;
+    color8: #586E75;
+    
+// Red
+    color1: #DC322F;
+    color9: #CB4B16;
+
+// Green
+    color2: #859900;
+    color10: #859900;
+
+// Yellow
+    color3: #B58900;
+    color11: #B58900;
+
+// Blue
+    color4: #268BD2;
+    color12: #268BD2;
+
+// Magenta
+    color5: #EC0048;
+    color13: #D33682;
+
+// Cyan
+    color6: #2AA198;
+    color14: #2AA198;
+
+// White
+    color7: #94A3A5;
+    color15: #EEEEEE;
+}
+

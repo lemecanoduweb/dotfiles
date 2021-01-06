@@ -1,0 +1,52 @@
+@import "colors"
+
+* {
+	font: "Monospace 16";
+	background-color: @background;
+	text-color: @foreground;
+}
+
+window {
+	fullscreen: true;
+	padding: 25%;
+}
+
+inputbar {
+	border: 0 0 1 0;
+	border-color: @foreground;
+}
+
+prompt {
+	enabled: false;
+}
+
+entry {
+    	padding: 15;
+	border-color: @foreground;
+}
+
+listview {
+	padding: 15 0 0 0;
+	scrollbar: true;
+	dynamic: true;
+
+}
+
+scrollbar {
+    	handle-color: @foreground;
+   	handle-width: 8;
+}
+
+element {
+	spacing: 15;
+    	padding: 0 10 10 10;
+    	text-color: @color8;
+}
+
+element.selected {
+    text-color: @foreground;
+}
+
+element-icon { 
+	size: 2ch; 
+}
