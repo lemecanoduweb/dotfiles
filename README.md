@@ -7,7 +7,7 @@ Install
 -------
 
 Run `install.sh`
-> Script is make for `archlinux` os
+> Script is made for `archlinux` os
 
 Info
 ----
@@ -55,7 +55,7 @@ Dependances
 Troubleshooting
 ---------------
 
-***My mic doesn't work*** /
+***My mic doesn't work*** \
 Use `pavucontrol` to activate it
 
 ***I can't copy/paste in vim when it is open in another terminal*** \
@@ -64,7 +64,7 @@ Install `gvim` instaed of `vim`
 ***Powerkit display default Adwaita icon*** \
 Install `qt5-base` and `qt5-svg` for dispaly icon of default gtk icon
  
-Util links
+Useful links
 ----------
 - https://github.com/polybar/polybar/wiki
 - https://github.com/jaagr/dots/tree/master/.local/etc/themer/themes
