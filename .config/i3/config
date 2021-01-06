@@ -187,6 +187,8 @@ assign [class="firefox"] workspace number $ws2
 assign [class="Chromium"] workspace number $ws2
 assign [class="jetbrains-idea"] workspace number $ws3
 assign [class="Code"] workspace number $ws3
+assign [class="discord"] workspace number $ws4
+assign [class="Slack"] workspace number $ws4
 assign [class="Nautilus"] workspace number $ws5
 assign [class="Virt-manager"] workspace number $ws6
 
