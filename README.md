@@ -1,10 +1,38 @@
 Dotfiles
 ========
 
+The dotfiles for the config of my desktop env
+
+Install
+-------
+
+Run `install.sh`
+> Script is make for `archlinux` os
+
+Info
+----
+
+App :
+ - `i3`
+ - `polybar`
+ - `rofi`
+ - `termite`
+ - `picom`
+ - `volumeicon`
+ - `nm-applet`
+ - `powerkit`
+
+GTK2/3 :
+ - themes : Adwaita
+ - icons : ePapirus
+
+Font :
+ - Monospace
+ - Material design icon
+
 Dependances
 -----------
 
-App :
  - `polybar`
  - `rofi`
  - `picom`
@@ -21,30 +49,20 @@ App :
  - `xorg-xrandr`
  - `qt5-base`
  - `qt5-svg`
-
-Font :
- - `Material Design Icon`
- - `ttf-liberation`
-
-Theme
------
-
-Icon = `papirus-icon-theme-git` \
-GTK2/3 = `gnome-themes-extra`
-
-TODO
-----
-
-- Applet settings for network, battery, powermenu
-- Copy/Paste between term with vim
-- gtk config (and choise theme)
+ - `gnome-themes-extra`
+ - `ttf-material-design-icons-git`
 
 Troubleshooting
 ---------------
 
- - active mic with pavucontrol
- - activate clipboard between vim => install `gvim`
- - install `qt5-base` and `qt5-svg` to display powerkit icons
+***My mic doesn't work*** /
+Use `pavucontrol` to activate it
+
+***I can't copy/paste in vim when it is open in another terminal*** \
+Install `gvim` instaed of `vim`
+
+***Powerkit display default Adwaita icon*** \
+Install `qt5-base` and `qt5-svg` for dispaly icon of default gtk icon
  
 Util links
 ----------
