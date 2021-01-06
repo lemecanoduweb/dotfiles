@@ -52,7 +52,7 @@ install xscreensaver \
 	powerkit
 
 # Install oh my zsh
-install zsh && chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # Install plug vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \

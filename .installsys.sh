@@ -21,4 +21,19 @@ mkinitcpio -p linux
 
 useradd -m -g wheel -s /usr/bin/zsh jtutzo
 
+pacman -Sy go \
+	git
+
+chmod 777 /etc/sudoers && \
+	sed 's|\(# \)\(\%wheel\tALL=(ALL) ALL\)|\2|g' /etc/sudoers && \
+	chmod 440 /etc/sudoers
+
+mkdir /root/tmp
+cd /root/tmp
+git clone https://aur.archlinux.org/yay
+cd yay
+makepkg -i
+
+cd ~
+
 exit 0
