@@ -32,6 +32,7 @@ exec --no-startup-id feh --bg-scale $HOME/.config/mountains-1412683.jpg
 exec --no-startup-id nm-applet
 exec --no-startup-id volumeicon
 exec --no-startup-id powerkit
+exec --no-startup-id pamac-tray
 exec_always --no-startup-id picom 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh --main
 
@@ -55,6 +56,7 @@ bindsym $mod+Shift+q kill
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 bindsym $mod+d exec rofi -show drun
+#bindsym $mod+Tab exec rofi -show window
 bindsym $mod+o exec rofi -show window
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -137,6 +139,11 @@ bindsym $mod+underscore workspace number $ws8
 bindsym $mod+ccedilla workspace number $ws9
 bindsym $mod+agrave workspace number $ws10
 
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
+bindsym $mod+b workspace back_and_forth
+
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1 workspace number $ws1
 bindsym $mod+Shift+eacute move container to workspace number $ws2 workspace number $ws2
@@ -189,8 +196,10 @@ assign [class="jetbrains-idea"] workspace number $ws3
 assign [class="Code"] workspace number $ws3
 assign [class="discord"] workspace number $ws4
 assign [class="Slack"] workspace number $ws4
-assign [class="Nautilus"] workspace number $ws5
-assign [class="Virt-manager"] workspace number $ws6
+assign [class="Postman"] workspace number $ws5
+assign [class="Pavucontrol"] workspace number $ws6
+assign [class="Nautilus"] workspace number $ws6
+assign [class="Virt-manager"] workspace number $ws7
 
 gaps inner 10
 gaps outer 5
