@@ -3,6 +3,9 @@ URxvt*internalBorder: 10
 URxvt*font: xft:Monospace:size=11
 URxvt*fontBold: xft:Monospace:bold:size=11
 Urxvt*letterSpace: 0
+*font: xft:Monospace:size=11
+*fontBold: xft:Monospace:bold:size=11
+*internalBorder: 10
 
 *background: #2D363A
 *foreground: #94A3A5

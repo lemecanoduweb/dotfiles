@@ -38,3 +38,6 @@ color14 = #2AA198
 #White
 color7 = #94A3A5
 color15 = #EEEEEE
+
+[hints]
+padding = 150
