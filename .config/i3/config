@@ -35,6 +35,7 @@ exec --no-startup-id powerkit
 exec --no-startup-id pamac-tray
 exec_always --no-startup-id picom 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh --main
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -126,6 +127,7 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+set $ws11 "11"
 
 # switch to workspace
 bindsym $mod+ampersand workspace number $ws1
@@ -143,6 +145,7 @@ bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
 bindsym $mod+b workspace back_and_forth
+bindsym $mod+a workspace number $ws11
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1 workspace number $ws1
@@ -194,12 +197,24 @@ assign [class="firefox"] workspace number $ws2
 assign [class="Chromium"] workspace number $ws2
 assign [class="jetbrains-idea"] workspace number $ws3
 assign [class="Code"] workspace number $ws3
-assign [class="discord"] workspace number $ws4
-assign [class="Slack"] workspace number $ws4
-assign [class="Postman"] workspace number $ws5
-assign [class="Pavucontrol"] workspace number $ws6
+assign [class="Postman"] workspace number $ws4
+assign [class="discord"] workspace number $ws5
+assign [class="Slack"] workspace number $ws5
 assign [class="Nautilus"] workspace number $ws6
-assign [class="Virt-manager"] workspace number $ws7
+assign [class="Evince"] workspace number $ws6
+assign [class="Gthumb"] workspace number $ws6
+assign [class="Lollypop"] workspace number $ws6
+assign [class="Totem"] workspace number $ws6
+assign [class="Gedit"] workspace number $ws6
+assign [class="Gnome-terminal"] workspace number $ws6
+assign [class="Pavucontrol"] workspace number $ws7
+assign [class="GParted"] workspace number $ws7
+assign [class="Pamac-manager"] workspace number $ws7
+assign [class="Simple-scan"] workspace number $ws7
+assign [class="Gnome-disk"] workspace number $ws7
+assign [class="Lxappearance"] workspace number $ws7
+assign [class="Virt-manager"] workspace number $ws8
+assign [class="Cheese"] workspace number $ws9
 
 gaps inner 10
 gaps outer 5
