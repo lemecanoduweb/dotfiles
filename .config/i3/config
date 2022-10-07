@@ -193,28 +193,31 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+bindsym $mod+p move workspace to output right
+bindsym $mod+i move workspace to output left
+
 assign [class="firefox"] workspace number $ws2
 assign [class="Chromium"] workspace number $ws2
+assign [class="Google-chrome"] workspace number $ws2
 assign [class="jetbrains-idea"] workspace number $ws3
 assign [class="Code"] workspace number $ws3
 assign [class="Postman"] workspace number $ws4
 assign [class="discord"] workspace number $ws5
 assign [class="Slack"] workspace number $ws5
 assign [class="Nautilus"] workspace number $ws6
-assign [class="Evince"] workspace number $ws6
-assign [class="Gthumb"] workspace number $ws6
-assign [class="Lollypop"] workspace number $ws6
-assign [class="Totem"] workspace number $ws6
-assign [class="Gedit"] workspace number $ws6
-assign [class="Gnome-terminal"] workspace number $ws6
+assign [class="Thunar"] workspace number $ws6
 assign [class="Pavucontrol"] workspace number $ws7
 assign [class="GParted"] workspace number $ws7
 assign [class="Pamac-manager"] workspace number $ws7
 assign [class="Simple-scan"] workspace number $ws7
 assign [class="Gnome-disk"] workspace number $ws7
+assign [class="MSN Notifier"] workspace number $ws7
+assign [class="Manjaro Settings Manager"] workspace number $ws7
+assign [class="Blueman-manager"] workspace number $ws7
 assign [class="Lxappearance"] workspace number $ws7
 assign [class="Virt-manager"] workspace number $ws8
 assign [class="Cheese"] workspace number $ws9
+assign [class="Deezer"] workspace number $ws10
 
 for_window [class=.*] focus
 
