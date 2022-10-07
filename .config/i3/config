@@ -216,6 +216,10 @@ assign [class="Lxappearance"] workspace number $ws7
 assign [class="Virt-manager"] workspace number $ws8
 assign [class="Cheese"] workspace number $ws9
 
+for_window [class=.*] focus
+
+focus_on_window_activation focus
+
 gaps inner 10
 gaps outer 5
 
