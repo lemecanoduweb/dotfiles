@@ -32,6 +32,12 @@ install noto-fonts \
 install papirus-icon-theme-git \
 	gnome-themes-extra
 
+# Install others
+install xscreensaver \
+	xorg-xrandr \
+	qt5-base \
+	qt5-svg
+
 # Install apps
 install polybar \
 	rofi \
@@ -42,14 +48,11 @@ install polybar \
 	volumeicon \
 	lxappearance \
 	pavucontrol \
-	network-manager-applet
-
-# Install powerkit
-install xscreensaver \
-	xorg-xrandr \
-	qt5-base \
-	qt5-svg \
-	powerkit
+	network-manager-applet \
+	pavucontrol \
+	powerkit \
+	arandr \
+	gvim
 
 # Install oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
