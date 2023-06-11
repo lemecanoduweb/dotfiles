@@ -31,18 +31,30 @@ exec --no-startup-id feh --bg-scale $HOME/.config/mountains-1412683.jpg
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 exec --no-startup-id volumeicon
-exec --no-startup-id powerkit
 exec --no-startup-id pamac-tray
-exec_always --no-startup-id picom 
+#exec_always --no-startup-id picom --xrender-sync --xrender-sync-fence
+exec_always --no-startup-id picom
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh --main
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+#exec --no-startup-id dunst --config $HOME/.config/dunst/dunstrc
+
+# When no use xfc4
+exec --no-startup-id powerkit
+
+
+# When usr xfce4
+#exec --no-startup-id xfce4-power-manager
+exec --no-startup-id xfce4-volumed-pulse
+exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
+#exec --no-startup-id pulseaudio --start
+#exec --no-startup-id pulseaudio
 
 # Use pactl to adjust volume in PulseAudio.
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+#set $refresh_i3status killall -SIGUSR1 i3status
+#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+#bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -143,8 +155,8 @@ bindsym $mod+agrave workspace number $ws10
 
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
+bindsym $mod+BackSpace workspace back_and_forth
 
-bindsym $mod+b workspace back_and_forth
 bindsym $mod+a workspace number $ws11
 
 # move focused container to workspace
@@ -158,6 +170,7 @@ bindsym $mod+Shift+egrave move container to workspace number $ws7 workspace numb
 bindsym $mod+Shift+8 move container to workspace number $ws8 workspace number $ws8
 bindsym $mod+Shift+ccedilla move container to workspace number $ws9 workspace number $ws9
 bindsym $mod+Shift+agrave move container to workspace number $ws10 workspace number $ws10
+bindsym $mod+Shift+a move container to workspace number $ws11 workspace number $ws11
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

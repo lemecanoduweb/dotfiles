@@ -11,4 +11,10 @@ kill_bar() {
 }
 
 kill_bar
-polybar -q main -c $DIR/main.ini &
+if type "xrandr"; then
+  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+    MONITOR=$m polybar -q main -c $DIR/main.ini &
+  done
+else
+  polybar -q main -c $DIR/main.ini &
+fi
